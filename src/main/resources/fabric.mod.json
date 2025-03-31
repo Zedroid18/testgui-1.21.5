@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "testgui",
+	"version": "${version}",
+	"name": "testgui",
+	"description": "testing GUI for ",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://zedroid.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/testgui/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.zedroid.testgui.Testgui"
+		],
+		"fabric-datagen": [
+			"net.zedroid.testgui.TestguiDataGenerator"
+		],
+		"client": [
+			"net.zedroid.testgui.TestGUIClient"
+		]
+	},
+	"mixins": [
+		"testgui.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
